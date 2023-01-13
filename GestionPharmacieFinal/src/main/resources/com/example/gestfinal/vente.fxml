@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="785.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestfinal.Controllers.VenteController">
+    <children>
+        <VBox layoutX="25.0" layoutY="45.0" prefHeight="231.0" prefWidth="317.0">
+            <children>
+                <Label text="Nom Medicament" />
+                <TextField fx:id="tnommedicament" promptText="Nom Medicament" />
+                <Label layoutX="10.0" layoutY="10.0" text="Quantite" />
+                <TextField fx:id="tquantite" layoutX="10.0" layoutY="27.0" promptText="Quantite" />
+                <Label layoutX="10.0" layoutY="53.0" text="Prix Unitaire" />
+                <TextField fx:id="tprixunitaire" layoutX="10.0" layoutY="70.0" promptText="Prix Unitaire" />
+                <Label layoutX="10.0" layoutY="95.0" text=" Date " />
+                <TextField fx:id="tdate" layoutX="10.0" layoutY="113.0" promptText="YYYY-MM-JJ" />
+            </children>
+        </VBox>
+        <TableView fx:id="table" layoutX="88.0" layoutY="276.0" onMouseClicked="#getData" prefHeight="200.0" prefWidth="562.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="59.33334732055664" text="ID" />
+                <TableColumn fx:id="colnMedicament" prefWidth="115.99996185302734" text="Nom Médicament" />
+                <TableColumn fx:id="colqMedicament" prefWidth="127.33332824707031" text="Quantité Médicament" />
+                <TableColumn fx:id="colpUnitaire" prefWidth="81.33331298828125" text="Prix unitaire" />
+                <TableColumn fx:id="colpVente" prefWidth="93.33334350585938" text="Prix de vente" />
+                <TableColumn fx:id="colDate" prefWidth="81.99996948242188" text=" Date" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnSave" layoutX="444.0" layoutY="58.0" mnemonicParsing="false" onAction="#saveMedicament" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #83e684;" text="Save" />
+        <Button fx:id="btnUpdate" layoutX="446.0" layoutY="102.0" mnemonicParsing="false" onAction="#updateMedicament" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #83e684;" text="Update" />
+        <Button fx:id="btnDelete" layoutX="446.0" layoutY="146.0" mnemonicParsing="false" onAction="#deleteMedicament" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #83e684;" text="Delete" />
+        <Button fx:id="btnClear" layoutX="446.0" layoutY="187.0" mnemonicParsing="false" onAction="#clearMedicament" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #83e684;" text="Clear" />
+        <Button fx:id="btncheck" layoutX="370.0" layoutY="58.0" mnemonicParsing="false" onAction="#checkproduit" style="-fx-background-color: #83e684;" text="check" />
+      <Label layoutX="18.0" layoutY="14.0" prefHeight="22.0" prefWidth="400.0" text="Ventes" textFill="#83e684">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

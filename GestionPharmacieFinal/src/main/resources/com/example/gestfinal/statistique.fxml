@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestfinal.StatistiqueController">
+   <children>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="600.0" translateY="362.0" />
+      <Pane>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="74.0" prefWidth="226.0" text="Ventes du mois" translateX="26.0">
+               <font>
+                  <Font name="Lato Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="74.0" prefHeight="74.0" prefWidth="226.0" text="Ventes du jour" translateX="26.0">
+               <font>
+                  <Font name="Lato Medium" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="148.0" prefHeight="74.0" prefWidth="226.0" text="Achats du mois" translateX="26.0">
+               <font>
+                  <Font name="Lato Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="222.0" prefHeight="74.0" prefWidth="226.0" text="Achats du jour" translateX="26.0" />
+            <Label fx:id="ventes_mois" layoutX="426.0" layoutY="18.0" text="265">
+               <font>
+                  <Font name="Lato Semibold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="ventes_jour" layoutX="426.0" layoutY="92.0" text="20">
+               <font>
+                  <Font name="Lato Semibold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="achats_mois" layoutX="426.0" layoutY="166.0" text="130">
+               <font>
+                  <Font name="Lato Semibold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="achats_jour" layoutX="426.0" layoutY="240.0" text="4">
+               <font>
+                  <Font name="Lato Semibold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>

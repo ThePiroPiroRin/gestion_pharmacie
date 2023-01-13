@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="546.0" prefWidth="785.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestfinal.Controllers.CommandeController">
+   <children>
+      <TableView fx:id="table" layoutX="62.0" layoutY="273.0" prefHeight="200.0" prefWidth="661.0">
+         <columns>
+            <TableColumn fx:id="colnom_pro" prefWidth="104.0" text="nom_pro" />
+            <TableColumn fx:id="colprix" prefWidth="69.60002136230469" text="prix" />
+            <TableColumn fx:id="colqtite" prefWidth="77.5999755859375" text="qtite" />
+            <TableColumn fx:id="colnom_Fr" prefWidth="114.4000244140625" text="nom_Fr" />
+            <TableColumn fx:id="colest_recu" prefWidth="75.20001220703125" text="est_recu" />
+            <TableColumn fx:id="colest_complet" prefWidth="81.5999755859375" text="est_complet" />
+            <TableColumn fx:id="colqtite_recu" prefWidth="91.99993896484375" text="qtite_recu" />
+            <TableColumn fx:id="colid" prefWidth="51.199951171875" text="id" />
+         </columns>
+      </TableView>
+      <Button fx:id="valider" layoutX="367.0" layoutY="493.0" mnemonicParsing="false" onAction="#Valider" style="-fx-background-color: #83e684;" text="valider" />
+      <VBox layoutX="37.0" layoutY="41.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="231.0" prefWidth="317.0">
+         <children>
+            <Label text="Nom_Prod" />
+            <TextField fx:id="nom_pro" />
+            <Label text="Prix_Prod" />
+            <TextField fx:id="prix" />
+            <Label text="Quantite" />
+            <TextField fx:id="qtite" />
+            <Label text="Nom_FR" />
+            <TextField fx:id="nom_Fr" />
+            <Label text="Date " />
+            <TextField fx:id="LaDate" promptText="YYYY-MM-JJ" />
+         </children>
+      </VBox>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="22.0" prefWidth="400.0" text="Commandes" textFill="#83e684">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="448.0" layoutY="57.0" mnemonicParsing="false" onAction="#sendCommande" style="-fx-background-color: #83e684;" text="Ajouter" />
+      <Label fx:id="messg" alignment="CENTER" layoutX="396.0" layoutY="128.0" prefHeight="82.0" prefWidth="160.0" />
+
+   </children>
+</AnchorPane>
