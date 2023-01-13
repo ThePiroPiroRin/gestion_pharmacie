@@ -1,6 +1,5 @@
 To use this app:
 Please add attached jars in project structure modules add jars.
-Hover over red imports and do the suggested add requires... corrections.
 Create a database and add its information in the ConnexionDB class.
 Create 4 tables one for products, orders, sales and employees named produits, commandes, vente and employes respectively.
 Make sure the tables are created in accordance to the screenshots attached in dbScreens using the following instructions:
